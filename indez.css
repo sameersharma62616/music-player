@@ -115,7 +115,7 @@ body{
     left: 47%;
 }
 #progress{
-    -webkit-appearance: none;   /* they give default hight of slider */
+    -webkit-appearance: none;
     height: 6px;
     width: 650px;
     background: rgb(89, 91, 90);
@@ -124,7 +124,7 @@ body{
     margin-left: 580px;
     margin-top: 560px;
 }
-#progress::-webkit-slider-thumb{     /* jaha pe humne slider ke uper ke point ko manage kiya........................slider ke uper ka name defined he... webkit-slider-thumb ..ke name se*/
+#progress::-webkit-slider-thumb{
     -webkit-appearance: none;
     background: black;
     height: 30px;
@@ -139,7 +139,7 @@ body{
     display: flex;
     gap: 10px;
 }
-.controls div{       /* jaha pe hum ne contro ko hi div ke sath compare kiya he abb ish me div controll ki tarah he hai */
+.controls div{
     height: 60px;
     width: 60px;
     background: rgb(20, 99, 32);
