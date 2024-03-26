@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="indez.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="background">
+        <div class="profile">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="player">MUSIC PLAYER</div>
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="circle">
+            <img src="img-1.jpg" height="310px" class="img">
+        </div>
+        <div class="jai-siya-ram">JAI SIYA RAM</div>
+        <div class="spotify">SPOTIFY</div>
+
+        <!-- hum ne apne screen pe se orignal controler ko .....aise hataya he ki ....hume neche wali line me se ausio ke aage or id ke peche se controller ko hata diya -->
+        <audio id="song">
+            <source src="y2mate.com - Jai Siya Ram.mp3" type="audio/mp3">
+        </audio>
+        <input type="range" value="0" id="progress">
+
+
+        <div class="controls">
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+
+    </div>
+
+
+    <script src="indez.js"></script>
+</body>
+</html>

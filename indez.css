@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(28, 32, 29);
+}
+.profile{
+    color: rgb(255, 246, 246);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 7px 0px rgb(66, 68, 67) inset;
+    cursor: pointer;
+    transition: 0.1s;
+    margin: 30px 0px 0px 30px;
+}
+.profile::before{
+    content: " ";
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(18, 21, 19);
+    box-shadow: 0px 0px 10px 2px rgb(80, 80, 80);
+    z-index: -1;
+}
+.profile:hover{
+    font-size: 102%;
+    color: rgb(222, 221, 221);
+}
+.player{
+    color: white;
+    font-family: sans-serif;
+    opacity: 60%;
+    font-size: 14px;
+    position: absolute;
+    left: 46%;
+    top: 4%;
+}
+.menu{
+    color: rgb(255, 246, 246);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 7px 0px rgb(66, 68, 67) inset;
+    cursor: pointer;
+    transition: 0.1s;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.menu::before{
+    content: " ";
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(18, 21, 19);
+    box-shadow: 0px 0px 10px 2px rgb(80, 80, 80);
+    z-index: -1;
+}
+.menu:hover{
+    font-size: 102%;
+    color: rgb(222, 221, 221);
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    width: 330px;
+    border-radius: 50%;
+    background-color: rgb(18, 21, 19);
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    box-shadow: 0px 0px 10px 3px rgb(80, 80, 80);
+    animation-name: animate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.img{
+    border-radius: 50%;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.jai-siya-ram{
+    color: rgb(202, 200, 200);
+    font-size: 40px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 49%;
+    left: 41.8%;
+}
+.spotify{
+    color: rgb(164, 161, 161);
+    font-size: 14px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 54%;
+    left: 47%;
+}
+#progress{
+    -webkit-appearance: none;   /* they give default hight of slider */
+    height: 6px;
+    width: 650px;
+    background: rgb(89, 91, 90);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 580px;
+    margin-top: 560px;
+}
+#progress::-webkit-slider-thumb{     /* jaha pe humne slider ke uper ke point ko manage kiya........................slider ke uper ka name defined he... webkit-slider-thumb ..ke name se*/
+    -webkit-appearance: none;
+    background: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 8px;
+    border-color: rgb(173, 171, 171);
+    box-shadow: 0 5px 5px black;
+}
+.controls{
+    display: flex;
+    gap: 10px;
+}
+.controls div{       /* jaha pe hum ne contro ko hi div ke sath compare kiya he abb ish me div controll ki tarah he hai */
+    height: 60px;
+    width: 60px;
+    background: rgb(20, 99, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0 10px 20px black;
+    cursor: pointer;
+    margin: 30px;
+    position: relative;
+    left: 720px;
+    top: 30px;
+}
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: rgb(66, 66, 209);
+}
